@@ -1,7 +1,11 @@
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello\n";
+    cout << "Laboratory work #1. GIT\n";
+    cout << "Variant #9. Telephone speaks\n";
+    cout << "Author: Kirill Radzko\n";
     return 0;
 }
