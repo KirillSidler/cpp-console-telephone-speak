@@ -38,7 +38,7 @@ int main()
             cout << subscriptions[i]->start.min << ' ';
             cout << subscriptions[i]->start.sec << '\n';
 
-            cout << "Время конца........: ";
+            cout << "Продолжительность........: ";
             cout << subscriptions[i]->end.hours << ' ';
             cout << subscriptions[i]->end.min << ' ';
             cout << subscriptions[i]->end.sec << '\n';

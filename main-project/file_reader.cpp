@@ -49,7 +49,7 @@ void read(const char* file_name, telephone_subscription* array[], int& size)
             item->end = convert(tmp_buffer);
             file >> item->money;
 
-            file.read(tmp_buffer, 1); // чтения лишнего символа пробела
+            file.read(tmp_buffer, 1); 
             file.getline(item->tarif, MAX_STRING_SIZE);
             array[size++] = item;
         }
