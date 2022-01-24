@@ -15,6 +15,7 @@ int main()
 
     telephone_subscription* subscriptions[MAX_FILE_ROWS_COUNT];
     int size;
+    float sizes;
     try
     {
         read("data.txt", subscriptions, size);
@@ -24,11 +25,12 @@ int main()
             cout << subscriptions[i]->telephone << '\n';
 
             cout << "Дата звонка.....: ";
-            cout << setw(2) << setfill('0') << subscriptions[i]->call.year << '-';
+            cout <<  subscriptions[i]->call.year << '-';
 
-            cout << setw(2) << setfill('0') << subscriptions[i]->call.month << '-';
+            cout <<  subscriptions[i]->call.month << '-';
 
-            cout << setw(2) << setfill('0') << subscriptions[i]->call.day;
+            cout <<  subscriptions[i]->call.day;
+
             cout << '\n';
 
             cout << "Время начала........: ";
@@ -41,14 +43,17 @@ int main()
             cout << subscriptions[i]->end.min << ' ';
             cout << subscriptions[i]->end.sec << '\n';
 
-            cout << "Тариф........: ";
+            cout << "Стоимость........: ";
             cout << subscriptions[i]->tarif << '\n';
 
-            cout << "Cтоимость........: ";
+            cout << "Тариф........: ";
             cout << subscriptions[i]->money << '\n';
 
             cout << '\n';
         }
+
+
+
         for (int i = 0; i < size; i++)
         {
             delete subscriptions[i];

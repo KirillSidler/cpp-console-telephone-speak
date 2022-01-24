@@ -31,7 +31,7 @@ struct tarif
 
 struct cena
 {
-    float money;
+    char money;
 
 };
 
@@ -42,7 +42,7 @@ struct telephone_subscription
     times start;
     times end;
     char tarif[MAX_STRING_SIZE];
-    cena money;
+    char money[MAX_STRING_SIZE];
 };
 
 #endif#pragma once
