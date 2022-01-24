@@ -10,8 +10,9 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     cout << "Laboratory work #1. GIT\n";
-    cout << "Variant #9. Telephone speaks\n";
+    cout << "Variant #9. Telephone Speaks\n";
     cout << "Author: Kirill Radzko\n";
+
     telephone_subscription* subscriptions[MAX_FILE_ROWS_COUNT];
     int size;
     try
@@ -57,5 +58,8 @@ int main()
     {
         cout << error << '\n';
     }
+
+    cout << "Group: 14\n";
+
     return 0;
 }
