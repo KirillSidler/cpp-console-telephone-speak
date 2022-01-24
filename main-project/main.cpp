@@ -23,7 +23,7 @@ int main()
             cout << subscriptions[i]->telephone << '\n';
 
             cout << "Дата звонка.....: ";
-            cout << setw(4) << setfill('0') << subscriptions[i]->call.year << '-';
+            cout << setw(2) << setfill('0') << subscriptions[i]->call.year << '-';
 
             cout << setw(2) << setfill('0') << subscriptions[i]->call.month << '-';
 
